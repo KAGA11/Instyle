@@ -1,26 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import logo from '../assets/logo.png'
 
 const HeaderContainer = styled.header`
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000; */
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 10px 20px;
 `;
 
-const Logo = styled.div`
-  font-size: 24px;
-  font-weight: bold;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+const Logo = styled.img`
+    height: 40px;
+    width: auto;
 `;
 
 const RightContent = styled.div`
@@ -31,7 +29,7 @@ const RightContent = styled.div`
 const Header: React.FC = () => {
   return (
     <HeaderContainer>
-      <Logo>INSTYLE</Logo>
+      <Logo src={logo} alt="Logo"></Logo>
       <RightContent>English</RightContent>
     </HeaderContainer>
   );
