@@ -1,37 +1,27 @@
 import React from 'react';
-import styled from 'styled-components';
-import logo from '../assets/logo.png'
-
-const HeaderContainer = styled.header`
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000; */
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-`;
-
-const Logo = styled.img`
-    height: 40px;
-    width: auto;
-`;
-
-const RightContent = styled.div`
-  margin-left: auto;
-  cursor: pointer;
-`;
+import logo from '../assets/logo.png';
 
 const Header: React.FC = () => {
   return (
-    <HeaderContainer>
-      <Logo src={logo} alt="Logo"></Logo>
-      <RightContent>English</RightContent>
-    </HeaderContainer>
+    <header className="w-full bg-white flex justify-between items-center px-5 py-2.5">
+      {/* 左侧：Logo */}
+      <div className="flex items-center">
+        <img src={logo} alt="Logo" className="h-10 w-auto" />
+      </div>
+
+      {/* 中间：导航链接 */}
+      <div className="flex space-x-10 font-bold absolute left-1/2 transform -translate-x-1/2">
+        <a href="#" className="text-gray-700 hover:text-red-500 text-lg">Home</a>
+        <a href="#" className="text-gray-700 hover:text-red-500 text-lg">About Us</a>
+        <a href="#" className="text-gray-700 hover:text-red-500 text-lg">Product</a>
+        <a href="#" className="text-gray-700 hover:text-red-500 text-lg">Contact</a>
+      </div>
+
+      {/* 右侧：语言切换 */}
+      <div className="cursor-pointer text-gray-700 hover:text-red-500">
+        English
+      </div>
+    </header>
   );
 };
 
