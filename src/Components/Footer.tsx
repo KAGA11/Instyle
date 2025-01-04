@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <p className="text-gray-300 mt-1">Phone: 123-456-7890, 123-456-7890</p>
           <Divider className='border-gray-900'/>
           <div className=" text-gray-400">
-            &copy; {new Date().getFullYear()} FashionCraft. All rights reserved.
+            &copy; {new Date().getFullYear()} Instyle. All rights reserved.
           </div>
         </div>
       </div>
