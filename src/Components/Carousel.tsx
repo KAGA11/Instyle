@@ -11,8 +11,8 @@ const App: React.FC = () => (
     </Carousel>
     <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center'>
       <h1 className='text-5xl text-white'>Craft Your Fashion With Us</h1>
-      <div className='mt-5 flex justify-center'>
-        <Button >Explore Our Product</Button>
+      <div className='mt-8 flex justify-center'>
+        <Button size='large'>EXPLORE OUR PRODUCT</Button>
       </div>
     </div>
   </div>
