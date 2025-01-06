@@ -1,3 +1,6 @@
+// Home 组件中的Description组件的描述信息
+// 包括header和body
+
 interface DescInterface {
     header:string[];
     body:string[];
