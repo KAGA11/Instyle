@@ -1,15 +1,12 @@
 import React from "react";
-import Header from "../Components/Header";
 import Carousel from "../Components/Carousel";
 import Description from "../Components/Description";
 import desc from "../assets/desc/desc";
-import Footer from "../Components/Footer";
 import { descClothing, descProcessing } from "../attribute";
 
 const Home: React.FC = () => {
   return (
     <>
-      <Header />
       <Carousel />
       <Description
         title="Our Processing Capabilities"
@@ -25,7 +22,6 @@ const Home: React.FC = () => {
         body={descClothing.body}
       />
 
-      <Footer />
     </>
   );
 };
