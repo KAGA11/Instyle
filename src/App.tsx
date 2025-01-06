@@ -1,43 +1,22 @@
 import React from 'react';
-import Header from './Components/Header';
-import Carousel from './Components/Carousel';
-import Description from './Components/Description';
-import desc from './assets/desc/assets'
-import Footer from './Components/Footer';
-import { descClothing, descProcessing } from './attribute';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import Product from './pages/Product';
 
-
-const App: React.FC = () => {
+const AppRouter: React.FC = () => {
   return (
-    <>
-      <Header />
-      <Carousel />
-      <Description 
-        title='Our Processing Capabilities'
-        descList={[
-          desc.desc1,
-          desc.desc2,
-          desc.desc3,
-        ]}
-        header={descProcessing.header}
-        body={descProcessing.body}
-      />
-
-      <Description 
-        title='Featured Clothing Items'
-        descList={[
-          desc.desc4,
-          desc.desc5,
-          desc.desc6,
-        ]}
-        header={descClothing.header}
-        body={descClothing.body}
-      />
-
-
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        {/* 首页 */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 };
 
-export default App;
+export default AppRouter;
