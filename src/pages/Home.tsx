@@ -1,6 +1,6 @@
 import React from "react";
-import Carousel from "../Components/Carousel";
-import Description from "../Components/Description";
+import Carousel from "../components/Carousel";
+import Description from "../components/Description";
 import desc from "../assets/desc/desc";
 import { descClothing, descProcessing } from "../attribute";
 
@@ -21,7 +21,6 @@ const Home: React.FC = () => {
         header={descClothing.header}
         body={descClothing.body}
       />
-
     </>
   );
 };
