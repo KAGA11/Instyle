@@ -7,7 +7,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "Node", // 修改为 Node，确保模块解析正确
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -18,7 +18,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* 新增配置 */
+    "esModuleInterop": true, // 允许 ES 模块的默认导入
+    "forceConsistentCasingInFileNames": true // 强制文件名大小写一致
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "scripts/**/*"] // 确保包含所有工具脚本
 }
