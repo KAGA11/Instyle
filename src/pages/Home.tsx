@@ -1,6 +1,6 @@
 import React from "react";
-import Carousel from "@components/Carousel";
-import Description from "../components/Description";
+import Carousel from "../Components/Carousel";
+import Description from "../Components/Description";
 import desc from "../assets/desc/desc";
 import { descClothing, descProcessing } from "../attribute";
 
