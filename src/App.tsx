@@ -5,8 +5,8 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Product from "./pages/Product";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from '@components/Header';;
+import Footer from '@components/Footer';;
 
 const AppRouter: React.FC = () => {
   return (

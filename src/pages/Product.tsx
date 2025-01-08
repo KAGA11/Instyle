@@ -1,5 +1,5 @@
-import ClothCard from "../components/ClothCard";
-import FabricCard from "../components/FabricCard";
+import ClothCard from '@components/ClothCard';
+import FabricCard from '@components/FabricCard';
 import clothes from "../assets/clothes/clothes";
 import fabric from '../assets/fabric/fabric';
 

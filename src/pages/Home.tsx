@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../components/Carousel";
+import Carousel from "@components/Carousel";
 import Description from "../components/Description";
 import desc from "../assets/desc/desc";
 import { descClothing, descProcessing } from "../attribute";
