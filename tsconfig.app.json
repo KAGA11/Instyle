@@ -23,12 +23,12 @@
     "noUncheckedSideEffectImports": true,
 
     /* 新增配置 */
-    "baseUrl": "./src", // 设置基础路径
+    "baseUrl": "./src", 
     "paths": {
-      "@components/*": ["./components/*"] // 如果需要路径别名，可以配置
+      "@components/*": ["./components/*"] 
     },
-    "esModuleInterop": true, // 允许 ES 模块的默认导入
-    "forceConsistentCasingInFileNames": true // 强制文件名大小写一致
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true 
   },
   "include": ["src"]
 }
