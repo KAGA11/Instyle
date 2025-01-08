@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="w-full bg-white shadow-sm">
+    <header className="w-full bg-white shadow-sm border-b-[1px] border-gray-200">
       <div className="container mx-auto px-4 py-2.5 flex justify-between items-center">
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-10 w-auto" />
@@ -18,10 +18,10 @@ const Header: React.FC = () => {
 
         {/* 桌面端 */}
         <div className="hidden sm:flex space-x-10 font-bold">
-          <Link to="/" className="text-gray-700 hover:text-red-500 text-lg">Home</Link>
-          <Link to="/about" className="text-gray-700 hover:text-red-500 text-lg">About Us</Link>
-          <Link to="/product" className="text-gray-700 hover:text-red-500 text-lg">Product</Link>
-          <Link to="/contact" className="text-gray-700 hover:text-red-500 text-lg">Contact</Link>
+          <Link to="/" className="text-gray-700 hover:text-red-500 text-lg cursor-pointer">Home</Link>
+          <Link to="/about" className="text-gray-700 hover:text-red-500 text-lg cursor-pointer">About Us</Link>
+          <Link to="/product" className="text-gray-700 hover:text-red-500 text-lg cursor-pointer">Product</Link>
+          <Link to="/contact" className="text-gray-700 hover:text-red-500 text-lg cursor-pointer">Contact</Link>
         </div>
 
         <div className="hidden sm:block cursor-pointer text-gray-700 hover:text-red-500">
